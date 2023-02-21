@@ -85,5 +85,4 @@ func TestDeleteItem(t *testing.T) {
 	req, _ := http.NewRequest(http.MethodDelete, "/items/2", nil)
 	response := executeRequest(req, s)
 	checkResponseCode(t, http.StatusOK, response.Code)
-
 }
